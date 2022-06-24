@@ -1,0 +1,99 @@
+$grey: rgb(38, 40, 44);
+$orange: rgb(255, 94, 41);
+$white: rgb(240, 248, 243);
+$whitePure: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+.footer-page {
+  background-color: $black;
+  color: $whitePure;
+  display: block;
+
+  .upper-part {
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+
+    .address {
+      text-align: left;
+
+      img {
+        width: 20vw;
+        margin-top: -10vh;
+        margin-left: -3vw;
+        margin-bottom: -5vh;
+      }
+
+      .mail-container {
+        margin-top: 20px;
+      }
+    }
+
+    .company-legal {
+      display: flex;
+      text-align: left;
+      margin-right: 10px;
+      padding-left: 10px;
+
+      .company {
+        margin-right: 5vw;
+
+        div {
+          margin-top: 5vh;
+        }
+      }
+
+      .legal {
+        div {
+          margin-top: 5vh;
+        }
+      }
+    }
+
+    .social {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+      justify-content: space-between;
+      font-size: large;
+      .news-letter {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        text-align: left;
+
+        h1 {
+          font-size: 25px;
+        }
+
+        input {
+          background-color: $grey;
+          border: none;
+          border-radius: 20px;
+          color: $whitePure;
+          padding: 10px 20px;
+          margin-bottom: 10px;
+        }
+        input[type='checkbox']{
+          background-color: $grey;
+          appearance: $grey;
+        }
+        input[type='submit']{
+          margin-top: 20px;
+        }
+      }
+
+      img {
+        text-align: center;
+        justify-content: center;
+        margin-right: 10px;
+        margin-top: 20px;
+      }
+    }
+  }
+  hr{
+    width: 70%;
+  }
+  .lower-part{
+
+  }
+}

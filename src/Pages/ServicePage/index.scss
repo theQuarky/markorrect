@@ -1,0 +1,55 @@
+$orange: rgb(255, 94, 41);
+$white: rgb(255, 255, 255);
+$background: rgb(38, 40, 44);
+$background-for-btn: #737375;
+
+.service-page-container {
+  background-color: $background;
+  color: $white;
+  margin-top: -30px;
+
+  p:first-child {
+    color: $orange;
+    font-size: 30px;
+  }
+
+  .service-page-content {
+    .service-list {
+      display: flex;
+      flex-direction: column;
+      // justify-content: space-evenly;
+      background-color: $white;
+      color: black;
+      margin-right: 5%;
+      margin-left: 5%;
+      height: 90vh;
+      h3{
+        padding: 10px;
+      }
+      ul {
+        text-align: left;
+        padding-left: 20px;
+        li {
+          list-style: none;
+          background-image: url('../../assets/markorrect-arrow.png');
+          background-repeat: no-repeat;
+          background-position: left top;
+          background-size: 10px;
+          padding-left: 15px;
+          // margin-right: 20px;
+        }
+      }
+    }
+  }
+
+  .service-page-footer {
+    background-color: $orange;
+    height: 50px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+}

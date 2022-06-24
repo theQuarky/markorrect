@@ -1,0 +1,15 @@
+$orange: rgb(255, 94, 41);
+
+.service-slider {
+    margin-top: -10vh;
+  .footer {
+    background-color: $orange;
+    color: white;
+    height: 50px;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    cursor: pointer;
+  }
+}

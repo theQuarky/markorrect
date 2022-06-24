@@ -1,0 +1,40 @@
+$orange: rgb(255, 94, 41);
+$white: rgb(255, 255, 255);
+$background: rgb(38, 40, 44);
+$background-for-btn: #737375;
+
+.about-us-container {
+    padding-top: 10px;
+    background-color: $background;
+    color: $white;
+
+    h1 {
+        color: $orange;
+    }
+
+    .container {
+        display: flex;
+        padding: 4vh 5vw;
+        font-size: 1.2rem;
+        justify-content: space-between;
+
+        .content {
+            width: 50%;
+            text-align: start;
+
+            span {
+                color: $orange;
+            }
+        }
+
+        .image-container {
+            width: 50%;
+            padding: 10px;
+
+            img {
+                width: 90%;
+                aspect-ratio: 1/1;
+            }
+        }
+    }
+}

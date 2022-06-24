@@ -1,0 +1,39 @@
+$orange: rgb(255, 94, 41);
+$white: rgb(255, 255, 255);
+$background: rgb(38, 40, 44);
+$background-for-btn: #737375;
+
+.service-in-details-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+  max-height: 100vh;
+  .content {
+    margin: 10vh 5vw;
+    aspect-ratio: 1/3;
+    color: $white;
+    span {
+      color: $orange !important;
+    }
+
+    p {
+      text-align: start;
+      font-size: 1.5rem;
+    }
+    button {
+      background: $white;
+      color: $orange !important;
+      font-size: 2rem;
+      border-radius: 15px;
+      border: none;
+    }
+  }
+  .image {
+    width: 100vw;
+    img {
+      width: 100%;
+      height: 100%;
+      // padding: 10px;
+    }
+  }
+}
