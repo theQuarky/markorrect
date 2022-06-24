@@ -12,6 +12,22 @@ $background-for-btn: #737375;
         color: $orange;
     }
 
+    .plane {
+        position: absolute;
+        z-index: 10;
+        width: 40%;
+    }
+
+    .plane-two {
+        bottom: -20vh;
+    }
+
+    .plane-one {
+        left: 10vw;
+        top: 200vh;
+        transform: scale(1) rotateY(180deg);
+    }
+
     .container {
         display: flex;
         padding: 4vh 5vw;

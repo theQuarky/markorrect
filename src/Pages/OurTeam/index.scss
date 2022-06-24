@@ -10,25 +10,50 @@ $white : rgb(240, 248, 243);
 $whitePure : rgb(255, 255, 255);
 $black : rgb(0, 0, 0);
 
-.our-team-container{
+.our-team-container {
     background-color: $white;
     width: 100%;
     overflow: hidden;
-    .page-one,.page-two,.page-three{
-        p,h1{
+
+    .plane {
+        position: absolute;
+        z-index: 10;
+        width: 40%;
+    }
+
+    .plane-two {
+        bottom: -20vh;
+    }
+
+    .plane-one {
+        left: -5vw;
+        top: 870vh;
+        transform: scale(1) rotateY(180deg);
+    }
+
+    .page-one,
+    .page-two,
+    .page-three {
+
+        p,
+        h1 {
             color: $orange;
             text-transform: uppercase;
         }
+
         margin-top:10vh;
-        .founder-image-container{
+
+        .founder-image-container {
             display: flex;
             justify-content: space-around;
             margin-top: 15vh;
             position: relative;
-            div{
-                width:30%;
+
+            div {
+                width: 30%;
                 height: 50%;
-                img{
+
+                img {
                     border: 1px $orange solid;
                     width: 100%;
                     height: 150%;
@@ -36,17 +61,21 @@ $black : rgb(0, 0, 0);
             }
         }
     }
-    .page-two,.page-three{
-        .heading-of-page-two{
+
+    .page-two,
+    .page-three {
+        .heading-of-page-two {
             font-size: 30px;
         }
-        .founder-image-container{
-            div{
-                width:20%;
+
+        .founder-image-container {
+            div {
+                width: 20%;
                 height: 50%;
             }
         }
     }
+
     .our-team-page-footer {
         background-color: $orange;
         height: 50px;
@@ -56,10 +85,11 @@ $black : rgb(0, 0, 0);
         padding: 50px;
         justify-content: space-between;
         text-align: left;
-        .footer-right{
+
+        .footer-right {
             text-align: center;
             color: $whitePure;
             cursor: pointer;
         }
-      }
+    }
 }

@@ -1,8 +1,12 @@
 import React from "react";
+import plane from "../../assets/plane.svg";
+
 import "./index.scss";
 export default function AboutUs() {
   return (
     <div className="about-us-container">
+      <img alt="img" src={plane} alt="plane" className="plane plane-one" />
+
       <div className="title">
         <h1>About us</h1>
         <p>
@@ -46,7 +50,7 @@ export default function AboutUs() {
           </p>
         </div>
         <div className="image-container">
-          <img src="https://picsum.photos/id/27/700/700" alt="about us" />
+          <img alt="img" src="https://picsum.photos/id/27/700/700" alt="about us" />
         </div>
       </div>
     </div>

@@ -62,30 +62,37 @@ export default function FooterPage() {
           <span> SOCIAL</span>
           <div>
             <img
+              alt="social-icon"
               src={require("../../assets/icons/Markorrect-facebook-icon.png")}
               width={35}
             />
             <img
+              alt="social-icon"
               src={require("../../assets/icons/Markorrect-Instagram-icon.png")}
               width={35}
             />
             <img
+              alt="social-icon"
               src={require("../../assets/icons/markorrect-twitter-icon.png")}
               width={35}
             />
             <img
+              alt="social-icon"
               src={require("../../assets/icons/Markorrect-linkedin-icon.png")}
               width={35}
             />
             <img
+              alt="social-icon"
               src={require("../../assets/icons/markorrect-Pinterest-icon.png")}
               width={35}
             />
             <img
+              alt="social-icon"
               src={require("../../assets/icons/markorrect-youtube-icon.png")}
               width={35}
             />
             <img
+              alt="social-icon"
               src={require("../../assets/icons/markorrect-snapchat-icon.png")}
               width={35}
             />
@@ -110,7 +117,7 @@ export default function FooterPage() {
       </div>
       <hr />
       <div className="lower-part">
-        
+        &copy; 2022 MARKORRECT, All Rights Reserved.
       </div>
     </div>
   );

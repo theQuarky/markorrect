@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import Service from "../../Components/Service";
+import plane from "../../assets/plane.svg";
 
 import "./index.scss";
 export default function ServiceSlider(props) {
@@ -26,6 +27,7 @@ export default function ServiceSlider(props) {
   const data = props.data;
   return (
     <div className="service-slider">
+      <img alt="img" src={plane} alt="plane" className="plane plane-two" />
       <Carousel autoPlaySpeed={5000} infinite={true} responsive={responsive}>
         {data.map((c, index) => {
           return (

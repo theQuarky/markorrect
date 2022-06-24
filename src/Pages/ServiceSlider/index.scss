@@ -1,7 +1,25 @@
 $orange: rgb(255, 94, 41);
 
 .service-slider {
-    margin-top: -10vh;
+  margin-top: -10vh;
+
+  .plane {
+    position: absolute;
+    z-index: 10;
+    width: 40%;
+  }
+
+  .plane-two {
+    top: 550vh;
+    right: 0;
+  }
+
+  .plane-one {
+    left: 0;
+    top: 430vh;
+    transform: scale(1) rotateY(180deg);
+  }
+
   .footer {
     background-color: $orange;
     color: white;

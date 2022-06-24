@@ -31,7 +31,7 @@ export default function LandingPage() {
           in this<span> digital era</span>.
         </div>
         <div className="ctc-btn-middle">
-            <span>Work</span> With Mark<span>orrect</span>
+          <span>Work</span> With Mark<span>orrect</span>
         </div>
       </main>
     </div>
