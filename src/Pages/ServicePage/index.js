@@ -206,8 +206,6 @@ export default function ServicesPage() {
 
   return (
     <div className="service-page-container">
-      <img alt="img" src={plane} alt="plane" className="plane plane-one" />
-      <img alt="img" src={plane} alt="plane" className="plane plane-two" />
       <div className="service-page-title">
         <p>services</p>
         <h1>Growth Driven</h1>

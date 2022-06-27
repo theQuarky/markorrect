@@ -78,6 +78,9 @@ $black: rgb(0, 0, 0);
         input[type='checkbox'] {
           background-color: $grey;
           appearance: $grey;
+          width: 50px;
+          height: 25px;
+          padding: 25px;
         }
 
         input[type='submit'] {

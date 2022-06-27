@@ -12,7 +12,7 @@ export default function Service(props) {
     >
       <div style={{ color: props.color }} className="content">
         <h1 dangerouslySetInnerHTML={{ __html: props.title }}></h1>
-        <p style={{ fontSize: props.content.length > 600 ? "1.4rem" : "1.5rem" }}>
+        <p >
           {props.content}
         </p>
         <button>Learn More</button>

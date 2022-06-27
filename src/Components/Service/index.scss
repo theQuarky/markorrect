@@ -3,11 +3,17 @@ $white: rgb(255, 255, 255);
 $background: rgb(38, 40, 44);
 $background-for-btn: #737375;
 
+// 30 40 20
+// T S C
 .service-in-details-container {
   display: flex;
   justify-content: center;
   margin-top: 10vh;
-  max-height: 100vh;
+  max-height: 83vh;
+  h1 {
+    font-size: 40px;
+  }
+
   .content {
     margin: 10vh 5vw;
     aspect-ratio: 1/3;
@@ -18,7 +24,7 @@ $background-for-btn: #737375;
 
     p {
       text-align: start;
-      font-size: 1.5rem;
+      font-size: 20px;
     }
     button {
       background: $white;
@@ -26,12 +32,13 @@ $background-for-btn: #737375;
       font-size: 2rem;
       border-radius: 15px;
       border: none;
+      padding: 9px;
     }
   }
   .image {
     width: 100vw;
     img {
-      width: 37vw;
+      width: 50vw;
       height: 100%;
       // padding: 10px;
     }

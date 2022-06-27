@@ -5,8 +5,8 @@ import plane from "../../assets/plane.svg";
 export default function LandingPage() {
   return (
     <div className="landing-page-container">
-      <img src={plane} alt="plane" className="plane plane-one" />
-      <img src={plane} alt="plane" className="plane plane-two" />
+            {/* <img src={plane} alt="plane" className="plane plane-one" /> */}
+            {/* <img src={plane} alt="plane" className="plane plane-two" /> */}
       <header>
         <span>
           <img src={logo} alt="LOGO" />
