@@ -1,5 +1,5 @@
 import React from "react";
-import plane from "../../assets/plane.svg";
+
 
 import "./index.scss";
 export default function AboutUs() {

@@ -1,6 +1,6 @@
 import "./index.scss";
 import logo from "../../assets/main_logo.svg";
-import plane from "../../assets/plane.svg";
+
 
 export default function LandingPage() {
   return (

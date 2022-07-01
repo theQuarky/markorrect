@@ -1,7 +1,7 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
 import Service from "../../Components/Service";
-import plane from "../../assets/plane.svg";
+
 
 import "./index.scss";
 export default function ServiceSlider(props) {

@@ -1,9 +1,29 @@
 import Carousel from "react-multi-carousel";
 import React from "react";
-import plane from "../../assets/plane.svg";
+
 import "./index.scss";
 
 export default function OurTeam() {
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 6,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 5,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+
   return (
     <div className="our-team-container">
       {/* <img src={plane} alt="plane" className="plane plane-one" /> */}
@@ -34,14 +54,18 @@ export default function OurTeam() {
         </div>
       </div>
       <div className="page-two">
-        <h1>Our team</h1>
         <div className="heading-of-page-two">GET TO KNOW THE MARKORRECT</div>
         lerum ipsum dolor sit amet consectetur adipisicing elit.lerum ipsum
         dolor sit amet consectetur adipisicing elit.lerum ipsum dolor sit amet
         consectetur adipisicing elit.
         <p>Meet Markorrect Team</p>
-        <div className="fasdf">
-          <Carousel>
+        <div className="founder-image-container">
+          <Carousel
+            responsive={responsive}
+            infinite={true}
+            autoPlay={false}
+            shouldResetAutoplay={false}
+          >
             {new Array(8).fill(0).map((_, index) => {
               return (
                 <div key={index}>
