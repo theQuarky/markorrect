@@ -2,28 +2,19 @@
   margin: 0;
   padding: 0;
   background: no-repeat url("../../assets/map.svg");
-  background-position: 20vw 0;
+  background-position: 20vw 10vh;
   background-color: rgb(38, 40, 44);
   text-transform: uppercase;
   height: 110vh;
-  width: 99vw;
+  width: 100%;
 
-  .plane {
-    position: absolute;
-    z-index: 10;
-    width: 40%;
+  .for-mobile {
+    display: none;
   }
 
-  .plane-two {
-    bottom: -20vh;
-  }
-
-  .plane-one {
-    left: 10vw;
-    top: 5vh;
-    transform: scale(1.2) rotateY(180deg);
-  }
-
+  // .for-desktop{
+  //   display: block;
+  // }
   header {
     position: relative;
     display: flex;
@@ -44,7 +35,6 @@
       color: white;
       width: 100%;
       flex-direction: row-reverse;
-      margin-right: 5vw;
 
       li {
         margin-top: 15px;
@@ -66,15 +56,15 @@
 
   main {
     position: relative;
-    margin-left: 5%;
-    margin-top: 7%;
+    margin-left: 4%;
+    margin-top: 0%;
 
     .main-text {
       text-align: start;
       font-size: 50px;
       color: white;
       position: relative;
-      margin-top: 5%;
+      margin-top: 2%;
 
       span {
         color: rgb(255, 94, 41);
@@ -86,13 +76,61 @@
       color: white;
       border-radius: 20px;
       padding: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
       margin-top: 40px;
       width: fit-content;
-      font-weight: bolder;
       font-size: 25px;
+      cursor: pointer;
 
       span {
         color: rgb(255, 94, 41);
+      }
+    }
+  }
+}
+
+// media query for mobile
+@media screen and (max-width: 600px) {
+  .landing-page-container {
+    background-position: 0vw 0vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+
+    .for-desktop {
+      display: none;
+    }
+
+    .for-mobile {
+      display: flex;
+      height: 40vw;
+      span {
+        width: fit-content;
+        img {
+          width: 140%;
+        }
+      }
+
+      ul {
+        display: none;
+      }
+    }
+
+    background-position: -5vw 20vh;
+    background-size: 130vw;
+
+    main{
+      .main-text{
+        font-size: 20px;
+        padding: 30px;
+      }
+      .ctc-btn-middle{
+        font-size: 15px;
+        width: 51vw;
+        margin-left: 7vw;
+        margin-top: 0vh;
       }
     }
   }

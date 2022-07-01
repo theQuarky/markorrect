@@ -2,7 +2,6 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-
 import "./index.scss";
 
 export default function ServicesPage() {
@@ -207,15 +206,24 @@ export default function ServicesPage() {
   return (
     <div className="service-page-container">
       <div className="service-page-title">
-        <p>services</p>
+        <p>Services</p>
         <h1>Growth Driven</h1>
-        <p>
-          some dummy textLerem ipsum dolor sit amet, consecteturLerem ipsum
-          dolor sit amet, consecteturLerem ipsum dolor sit amet, consectetur{" "}
+        <p className="service-subtitle-content">
+          We're not generalists; we're specialists. Our organisation was founded
+          to provide deep experience in highly complicated and constantly
+          changing digital channels. We provide integrated solutions with
+          one-of-a-kind services and deliverables that help businesses achieve
+          full-funnel growth.
         </p>
       </div>
       <div className="service-page-content">
-        <Carousel autoPlaySpeed={1000} infinite={true} responsive={responsive}>
+        <Carousel
+          autoPlaySpeed={1000}
+          infinite={true}
+          responsive={responsive}
+          autoPlay={false}
+          shouldResetAutoplay={false}
+        >
           {Object.keys(services).map((service, index) => (
             <div key={index} className="service-list">
               <h3>{service}</h3>

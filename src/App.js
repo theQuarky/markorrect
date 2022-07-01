@@ -126,12 +126,12 @@ function App() {
       <LandingPage />
       <AboutUs />
       <ServicesPage />
-      <ServiceSlider data={sliderOneData} />
+      {/*<ServiceSlider data={sliderOneData} />
       <ServiceSlider data={sliderTwoData} />
       <OurTeam />
       <ContactUs />
       <Testimonials />
-      <FooterPage />
+      <FooterPage /> */}
     </div>
   );
 }

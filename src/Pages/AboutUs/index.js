@@ -6,10 +6,10 @@ export default function AboutUs() {
   return (
     <div className="about-us-container">
       <div className="title">
-        <h1>About us</h1>
+        <h1>ABOUT US</h1>
         <p>
           Our Purpose <br />
-          Dedicating ourselves for helping our clients reach new heights.
+          Dedicating ourselfs for helping our clients reach new heights.
         </p>
       </div>
       <div className="container">
