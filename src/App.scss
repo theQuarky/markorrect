@@ -6,7 +6,15 @@
   $background: rgb(38, 40, 44);
   $background-for-btn: #737375;
 }
-
+.react-multiple-carousel__arrow {
+  margin-bottom: 0vh;
+}
+.react-multiple-carousel__arrow--right{
+  right: 10vw;
+}
+.react-multiple-carousel__arrow--left{
+  left: 10vw;
+}
 body {
   font-family: "Aldrich", sans-serif;
   background-color: #141519;

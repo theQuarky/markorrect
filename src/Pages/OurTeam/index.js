@@ -1,4 +1,5 @@
 import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 import React from "react";
 
 import "./index.scss";
@@ -12,7 +13,7 @@ export default function OurTeam() {
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -26,14 +27,15 @@ export default function OurTeam() {
 
   return (
     <div className="our-team-container">
-      {/* <img src={plane} alt="plane" className="plane plane-one" /> */}
-
       <div className="page-one">
         <h1>Our team</h1>
-        lerum ipsum dolor sit amet consectetur adipisicing elit.lerum ipsum
-        dolor sit amet consectetur adipisicing elit.lerum ipsum dolor sit amet
-        consectetur adipisicing elit.
-        <p>Meet Markorrect Team</p>
+        <p className="our-team-subtitle-one">
+          We are digital marketers and web developers who are influenced by the
+          rising and booming digital economy.<br/> Our team is always on the lookout
+          for folks who want to assist others stay relevant in an ever-changing
+          digital environment.
+        </p>
+        <p className="our-team-subtitle-two">Meet Markorrect Team</p>
         <div className="founder-image-container">
           <div>
             <img
@@ -55,9 +57,6 @@ export default function OurTeam() {
       </div>
       <div className="page-two">
         <div className="heading-of-page-two">GET TO KNOW THE MARKORRECT</div>
-        lerum ipsum dolor sit amet consectetur adipisicing elit.lerum ipsum
-        dolor sit amet consectetur adipisicing elit.lerum ipsum dolor sit amet
-        consectetur adipisicing elit.
         <p>Meet Markorrect Team</p>
         <div className="founder-image-container">
           <Carousel

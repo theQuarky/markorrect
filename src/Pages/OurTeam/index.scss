@@ -15,67 +15,76 @@ $black : rgb(0, 0, 0);
     width: 100%;
     overflow: hidden;
 
-    .plane {
-        position: absolute;
-        z-index: 10;
-        width: 40%;
-    }
-
-    .plane-two {
-        bottom: -20vh;
-    }
-
-    .plane-one {
-        left: -5vw;
-        top: 870vh;
-        transform: scale(1) rotateY(180deg);
-    }
-
     .page-one,
     .page-two,
     .page-three {
+        margin-top: 10vh;
 
         p,
         h1 {
             color: $orange;
             text-transform: uppercase;
+            padding: 0 5vw;
         }
 
-        margin-top:10vh;
+        .our-team-subtitle-one {
+            color: $black;
+
+        }
+
+        .our-team-subtitle-two {
+            font-size: 20px;
+        }
 
         .founder-image-container {
             display: flex;
             justify-content: space-around;
-            margin-top: 15vh;
+            margin-top: 7vh;
             position: relative;
 
             div {
                 width: 30%;
-                height: 50%;
+                line-height: 5px;
+                text-align: center;
 
                 img {
-                    border: 1px $orange solid;
+                    border: 2px $orange solid;
                     width: 100%;
-                    height: 150%;
+                    height: 100%;
+                    margin-bottom: 5px;
                 }
             }
         }
     }
 
-    .page-two,
-    .page-three {
+    .page-two {
+        margin-top: 15vh;
+
+        p {
+            font-size: 20px;
+        }
+
+        .react-multiple-carousel__arrow {
+            margin-bottom: 6vh;
+          }
+          
         .heading-of-page-two {
             font-size: 30px;
         }
 
+
         .founder-image-container {
             font-size: 15px;
-            margin-top: 5vh;
-            margin-bottom: 5vh;
+            margin: 5vw 2vw;
 
             div {
-                width: 90%;
-                height: 50%;
+                width: 80%;
+                margin-left: 2vw;
+                p {
+                    font-size: 15px;
+                    padding: 0;
+                    line-height: 5px;
+                }
 
                 img {
                     width: 100%;
