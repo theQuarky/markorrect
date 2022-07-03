@@ -6,23 +6,32 @@ $background-for-btn: #737375;
 .testimonial-container {
   background-color: $white;
   margin-top: -20px;
+
   h1 {
-    font-size: 40px;
+    font-size: 30px;
     color: black;
+    text-transform: uppercase;
   }
+
   p {
     padding-top: 30px;
     color: $orange;
-    font-size: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    margin-bottom: -1vh;
   }
+
   text-align: center;
+
   .testimonial-slider-page {
     padding: 0 25%;
+
     .testimonial-giver-name {
       color: $background;
     }
-    .testimonial-content {
-    }
+
+    .testimonial-content {}
+
     div {
       width: 30px;
       height: 30px;
@@ -31,15 +40,16 @@ $background-for-btn: #737375;
       margin-left: 50%;
     }
   }
+
   .footer {
     background-color: $orange;
     color: white;
     height: 50px;
-    font-size: 40px;
+    font-size: 35px;
     display: flex;
     justify-content: center;
     padding: 50px;
-    padding-top: 10px;
+    padding-top: 17px;
     cursor: pointer;
     margin-top: 5%;
     text-transform: uppercase;

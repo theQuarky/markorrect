@@ -17,6 +17,8 @@ import GraphicsDesignImg from "./assets/services/Markorrect  Graphic designing.s
 import PPCImg from "./assets/services/Markorrect  ppc.svg";
 import VideoMarketingImg from "./assets/services/Markorrect  video marketing.svg";
 import WebDevImg from "./assets/services/Markorrect  web development.svg";
+import OurClient from "./Pages/OurClient";
+
 function App() {
   const sliderOneData = [
     {
@@ -224,9 +226,10 @@ function App() {
       <ServiceSlider data={sliderTwoData} />
       <ServiceSlider data={sliderThreeData} />
       <OurTeam />
-      {/*<ContactUs />
+      <ContactUs />
+      <OurClient />
       <Testimonials />
-      <FooterPage /> */}
+      <FooterPage />
     </div>
   );
 }

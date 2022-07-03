@@ -9,21 +9,21 @@ export default function FooterPage() {
         <div className="address">
           <img src={main_logo} alt="logo" />
           <br />
-          123,alfkjd laksfdj,
+          263, Triveni Vishwa,
           <br />
-          ksdf lafsdj fjadlk fa,
+          near Tulsi banquet hall,
           <br />
-          laskdjf lakdsjf falsd
+          Bakrol- Vadtal Road,
           <br />
-          laksjdff 123413
+          Bakrol-388315
           <br />
-          fasdf
+          Anand.
           <br />
-          afdsf
+          Gujarat,
           <br />
-          fasd
+          India.
           <br />
-          <div className="mail-container">lasdjfaljh@fakhsd.com</div>
+          <div className="mail-container">connect@markorrect.com</div>
         </div>
         <div className="company-legal">
           <div className="company">
@@ -101,14 +101,17 @@ export default function FooterPage() {
             <h1>JOIN OUR NEWSLETTER</h1>
             <form>
               <input type="text" placeholder="ENTER OUR EMAIL" /> <br />
-              <label>
-                <input type="checkbox" />
-              </label>
-              <br />
-              <span>
-                {" "}
-                lerem lerem lerem lerem lerem lerem lerem lerem lerem{" "}
-              </span>
+              <div>
+                <div>
+                  <input type="checkbox" />
+                </div>
+                <div>
+                  I understand that i can unsubscribe, anytime.
+                  <br />
+                  Yes, I would like to recieve email marketing communication
+                  from markorrect.
+                </div>
+              </div>
               <br />
               <input type="submit" value="SUBSCRIBE" />
             </form>

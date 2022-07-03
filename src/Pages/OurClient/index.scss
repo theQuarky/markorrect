@@ -1,0 +1,21 @@
+$orange: rgb(255, 94, 41);
+$white: rgb(255, 255, 255);
+$background: rgb(38, 40, 44);
+$background-for-btn: #737375;
+
+.our-client-page {
+    height: 100vh;
+    margin-top: -3vh;
+    background-color: $background;
+
+    h1 {
+        padding-top: 5vh;
+        color: $orange;
+    }
+
+    p {
+        margin-top: -2vh;
+        font-size: 35px;
+        color: $white;
+    }
+}
