@@ -61,7 +61,7 @@
 
     .main-text {
       text-align: start;
-      font-size: 50px;
+      font-size: 3.7vw;
       color: white;
       position: relative;
       margin-top: 2%;
@@ -91,12 +91,12 @@
 }
 
 // media query for mobile
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 825px) {
   .landing-page-container {
-    background-position: 0vw 0vh;
+    background-position: 0vw 30vh;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 100%;
+    height: 70vh;
     width: 100%;
 
     .for-desktop {
@@ -106,10 +106,14 @@
     .for-mobile {
       display: flex;
       height: 40vw;
+
       span {
         width: fit-content;
+
         img {
-          width: 140%;
+          width: 80vw;
+          margin-top: 5vh;
+          margin-left: -5vw;
         }
       }
 
@@ -118,19 +122,24 @@
       }
     }
 
-    background-position: -5vw 20vh;
+    background-position: -10vw 35vh;
     background-size: 130vw;
 
-    main{
-      .main-text{
-        font-size: 20px;
+    main {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .main-text {
+        font-size: 5vw;
         padding: 30px;
+        text-align: center;
       }
-      .ctc-btn-middle{
-        font-size: 15px;
-        width: 51vw;
-        margin-left: 7vw;
-        margin-top: 0vh;
+
+      .ctc-btn-middle {
+        font-size: 2.2vw;
+        margin: 0 30vw;
+        // margin-top: 0vh;
       }
     }
   }
