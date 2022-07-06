@@ -225,11 +225,11 @@ function App() {
       <ServiceSlider data={sliderOneData} />
       <ServiceSlider data={sliderTwoData} />
       <ServiceSlider data={sliderThreeData} />
-      <OurTeam />
+      {/*<OurTeam />
       <ContactUs />
       <OurClient />
       <Testimonials />
-      <FooterPage />
+      <FooterPage /> */}
     </div>
   );
 }

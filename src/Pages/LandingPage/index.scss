@@ -96,7 +96,7 @@
     background-position: 0vw 30vh;
     background-size: 100%;
     background-repeat: no-repeat;
-    height: 70vh;
+    height: min-content;
     width: 100%;
 
     .for-desktop {
@@ -122,14 +122,15 @@
       }
     }
 
-    background-position: -10vw 35vh;
-    background-size: 130vw;
+    background-position: -22vw calc(2vw + 30vh);
+    background-size: 150vw;
 
     main {
       text-align: center;
       display: flex;
       flex-direction: column;
       justify-content: center;
+
       .main-text {
         font-size: 5vw;
         padding: 30px;
@@ -137,9 +138,9 @@
       }
 
       .ctc-btn-middle {
-        font-size: 2.2vw;
-        margin: 0 30vw;
-        // margin-top: 0vh;
+        font-size: 2vw;
+        margin: 30vh 19vw;
+        margin-bottom: 5vh;
       }
     }
   }

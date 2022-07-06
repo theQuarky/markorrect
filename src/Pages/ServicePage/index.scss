@@ -83,9 +83,25 @@ $background-for-btn: #737375;
 
 // media query for 825px
 @media screen and (max-width: 925px) {
-  .service-list {
-    max-height: 80vh !important;
-    font-size: 4.5vw !important;
+  .service-page-container{
+    margin-top: -15vh !important;
+    padding-top: 0 !important;
+    .service-page-title{
+      background-color: $white;
+      padding-top: 10vh;
+    }
+    .service-list {
+      height: 70vh !important;
+      font-size: 4vw !important;
+      padding: 0 5vw;
+      ul{
+        li{
+          padding-left: 40px !important;
+          background-position: left 5px !important;
+          padding-bottom: 10px;
+        }
+      }
+    }
+  
   }
-
 }
