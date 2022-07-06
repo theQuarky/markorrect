@@ -115,3 +115,56 @@ $black: rgb(0, 0, 0);
     color: rgb(101, 101, 101);
   }
 }
+
+@media screen and (max-width: 825px) {
+  .footer-page {
+    padding-top: -10vh;
+    .upper-part {
+      flex-direction: column;
+      padding-top: 8vh;
+      font-size: 4vw;
+
+      .address {
+        img {
+          width: 65vw;
+          margin-left: -8vw;
+        }
+
+        margin-bottom: 5vh;
+      }
+
+      .company-legal {
+        margin-bottom: 5vh;
+
+        .company {
+          div {
+            margin-top: 3vh;
+          }
+        }
+
+        .legal {
+          div {
+            margin-top: 3vh;
+          }
+        }
+      }
+
+      .social {
+        span {
+          font-size: 5vw;
+        }
+        .news-letter{
+          form{
+            font-size: 2vw;
+            input{
+              font-size: 3vw;
+            }
+          }
+        }
+        img {
+          width: 8vw;
+        }
+      }
+    }
+  }
+}

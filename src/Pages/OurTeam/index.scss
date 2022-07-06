@@ -111,3 +111,32 @@ $black : rgb(0, 0, 0);
         }
     }
 }
+
+// media query for mobile
+@media screen and (max-width: 825px) {
+    .our-team-container{
+
+        .page-one{
+            margin-top:5vh;
+            .founder-image-container{
+                div{
+                    width: 40%;
+                    font-size: 2.7vw;
+                }
+            }
+        }
+        .page-two{
+            margin-top:10vh;
+            .founder-image-container{
+                div{
+                    width: 80%;
+                    font-size: 3vw;
+                }
+            }
+        }
+
+        .our-team-page-footer{
+            font-size: 3vw;
+        }
+    }
+}
