@@ -72,26 +72,31 @@
     }
 
     .ctc-btn-middle {
-      background-color: #737375;
-      color: white;
-      border-radius: 20px;
-      padding: 10px;
-      padding-right: 20px;
-      padding-left: 20px;
-      margin-top: 40px;
-      width: fit-content;
-      font-size: 25px;
-      cursor: pointer;
+      text-align: left;
 
-      span {
-        color: rgb(255, 94, 41);
+      button {
+        background-color: #737375;
+        color: white;
+        border-radius: 20px;
+        padding: 10px;
+        padding-right: 20px;
+        padding-left: 20px;
+        margin-top: 40px;
+        width: fit-content;
+        font-size: 25px;
+        cursor: pointer;
+        border: none;
+
+        span {
+          color: rgb(255, 94, 41);
+        }
       }
     }
   }
 }
 
 // media query for mobile
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 925px) {
   .landing-page-container {
     background-position: 0vw 30vh;
     background-size: 100%;
@@ -130,7 +135,7 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-
+      margin-left: 0;
       .main-text {
         font-size: 5vw;
         padding: 30px;
@@ -138,9 +143,14 @@
       }
 
       .ctc-btn-middle {
-        font-size: 2vw;
-        margin: 30vh 19vw;
-        margin-bottom: 5vh;
+        text-align: center;
+
+        button {
+          font-size: 2vw;
+          margin: 30vh 19vw;
+          margin-bottom: 5vh;
+        }
+
       }
     }
   }

@@ -44,11 +44,11 @@ $background-for-btn: #737375;
 }
 
 // media queries
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 925px) {
     .about-us-container {
         background-color: $white;
-        color: $background;
-        // margin-top: -10vh;
+        color: $black;
+        margin-bottom: 5vh;
         p{
             font-size: 3vw;
             padding: 0 5vw;

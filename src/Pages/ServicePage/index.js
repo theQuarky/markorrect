@@ -17,7 +17,7 @@ export default function ServicesPage() {
     },
     tablet: {
       breakpoint: { max: 1024, min: 850 },
-      items: 2,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 850, min: 0 },

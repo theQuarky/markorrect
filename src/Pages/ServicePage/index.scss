@@ -91,9 +91,10 @@ $background-for-btn: #737375;
       padding-top: 10vh;
     }
     .service-list {
-      height: 70vh !important;
+      min-height: max-content;
       font-size: 4vw !important;
       padding: 0 5vw;
+      padding-bottom: 100px;
       ul{
         li{
           padding-left: 40px !important;
