@@ -66,16 +66,18 @@ $background-for-btn: #737375;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center;
   font-family: "Aldrich", sans-serif;
   margin-top: 10vh;
-  padding-top: 5vh;
-  h1 {  // height: 100vh;
+  margin-bottom: 0;
+  height: 135vw;
+  padding: 10vw;
+  padding-bottom: 1vh;
 
-    font-size: 35px;
-    text-align: left;
+  h1 {
+    font-size: 5vw;
     text-transform: uppercase;
   }
+
   align-items: center;
 
   .content {
@@ -84,13 +86,14 @@ $background-for-btn: #737375;
     z-index: 1;
     width: 100%;
     height: 50vh;
+
     span {
       color: $orange !important;
     }
 
     p {
       text-align: start;
-      font-size: 20px;
+      font-size: 3vw;
     }
 
     button {
@@ -101,7 +104,7 @@ $background-for-btn: #737375;
       border: 1px solid $orange;
       padding: 9px;
       text-transform: uppercase;
-      padding: 5px 20px;
+      padding: 10px 20px;
       margin-top: 20px;
     }
   }
@@ -119,4 +122,4 @@ $background-for-btn: #737375;
     }
   }
 
- }
+}

@@ -15,7 +15,7 @@ export default function Service(props) {
       setHeight(newHeight);
     });
   });
-  if (width > 768)
+  if (width > 925)
     return (
       <div
         style={{

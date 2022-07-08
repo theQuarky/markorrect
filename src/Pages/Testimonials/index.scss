@@ -41,7 +41,7 @@ $background-for-btn: #737375;
     }
   }
 
-  .footer {
+  .testimonial-footer {
     background-color: $orange;
     color: white;
     height: 50px;
@@ -57,8 +57,8 @@ $background-for-btn: #737375;
 }
 
 @media screen and (max-width: 925px) {
-  .footer {
+  .testimonial-footer {
     font-size: 4vw !important;
-    padding-bottom: 20px !important
+    padding-bottom: 4vw !important
   }
 }

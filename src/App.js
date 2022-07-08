@@ -156,8 +156,7 @@ function App() {
         We stay on top of new advancements and modifications to their platform so that you can take use of the most up-to-date features and have your products stand out.
       </p>
       `,
-      imgSrc:
-        "https://wallpaperboat.com/wp-content/uploads/2020/06/08/44354/amazon-01-920x518.jpg",
+      imgSrc:SEOImg,
       color: "black",
       backgroundColor: "white",
     },

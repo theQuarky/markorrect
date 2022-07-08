@@ -49,7 +49,7 @@ export default function Testimonials() {
           </div>
         ))}
       </Carousel>
-      <div className="footer">
+      <div className="testimonial-footer">
         Let's connect to achieve your <br /> business objective
       </div>
     </div>
