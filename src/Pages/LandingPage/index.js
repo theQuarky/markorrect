@@ -1,7 +1,7 @@
 import "./index.scss";
-import logo from "../../assets/main_logo.svg";
+import logo from "../../assets/logoMarkorrect1000x200.png";
 
-export default function LandingPage() {
+export default function LandingPage(props) {
   return (
     <div className="landing-page-container">
       <header className="for-desktop">

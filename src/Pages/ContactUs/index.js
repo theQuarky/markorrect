@@ -45,7 +45,7 @@ export default function ContactUs() {
     setValue(value);
   };
   return (
-    <div className="contact-us">
+    <div className="contact-us" id="contact-us">
       <h1> Contact Us</h1>
       <p>
         Please do not hesitate to contact us.

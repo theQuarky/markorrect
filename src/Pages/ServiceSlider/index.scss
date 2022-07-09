@@ -6,8 +6,9 @@ $orange: rgb(255, 94, 41);
   .footer {
     background-color: $orange;
     color: white;
-    height: 50px ;
-    font-size: 50px;
+    height: max-content !important;
+    padding-bottom: 2vw !important;
+    font-size: 2vw !important;
     display: flex;
     justify-content: center;
     padding: 30px;
@@ -18,8 +19,8 @@ $orange: rgb(255, 94, 41);
 
 @media screen and (max-width: 925px) {
   .footer {
-    height: fit-content;
+    height: max-content !important;
     font-size: 5vw !important;
-    padding-bottom: 6vw !important;
+    padding-bottom: 5vw !important;
   }
 }

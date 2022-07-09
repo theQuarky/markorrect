@@ -4,15 +4,15 @@ import "./index.scss";
 
 export default function Service(props) {
   const [width, setWidth] = useState(0);
-  const [height, setHeight] = useState(0);
+  // const [height, setHeight] = useState(0);
   console.log(props.title, props.content.length);
 
   useEffect(() => {
     window.addEventListener("resize", function (event) {
       const newWidth = window.innerWidth;
-      const newHeight = window.innerHeight;
+      // const newHeight = window.innerHeight;
       setWidth(newWidth);
-      setHeight(newHeight);
+      // setHeight(newHeight);
     });
   });
   if (width > 925)

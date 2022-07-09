@@ -23,7 +23,7 @@ $black : rgb(0, 0, 0);
         p,
         h1 {
             color: $orange;
-            text-transform: uppercase;
+            text-transform: capitalize;
             padding: 0 5vw;
         }
 
@@ -33,7 +33,7 @@ $black : rgb(0, 0, 0);
         }
 
         .our-team-subtitle-two {
-            font-size: 20px;
+            font-size: 2vw;
         }
 
         .founder-image-container {
@@ -66,8 +66,8 @@ $black : rgb(0, 0, 0);
 
         .react-multiple-carousel__arrow {
             margin-bottom: 6vh;
-          }
-          
+        }
+
         .heading-of-page-two {
             font-size: 30px;
         }
@@ -80,8 +80,9 @@ $black : rgb(0, 0, 0);
             div {
                 width: 80%;
                 margin-left: 2vw;
+
                 p {
-                    font-size: 15px;
+                    // font-size: 15px;
                     padding: 0;
                     line-height: 5px;
                 }
@@ -104,6 +105,7 @@ $black : rgb(0, 0, 0);
         justify-content: space-between;
         text-align: left;
         padding-top: 33px;
+
         .footer-right {
             text-align: center;
             color: $whitePure;
@@ -114,28 +116,36 @@ $black : rgb(0, 0, 0);
 
 // media query for mobile
 @media screen and (max-width: 925px) {
-    .our-team-container{
+    .our-team-container {
 
-        .page-one{
-            margin-top:5vh;
-            .founder-image-container{
-                div{
+        .page-one {
+            margin-top: 5vh;
+
+            .our-team-subtitle-two {
+                margin-top: 4vh;
+                margin-bottom: -4vw;
+            }
+
+            .founder-image-container {
+                div {
                     width: 40%;
                     font-size: 2.7vw;
                 }
             }
         }
-        .page-two{
-            margin-top:10vh;
-            .founder-image-container{
-                div{
+
+        .page-two {
+            margin-top: 10vh;
+
+            .founder-image-container {
+                div {
                     width: 80%;
                     font-size: 3vw;
                 }
             }
         }
 
-        .our-team-page-footer{
+        .our-team-page-footer {
             font-size: 3vw;
             height: 12vw;
         }

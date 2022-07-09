@@ -156,7 +156,7 @@ function App() {
         We stay on top of new advancements and modifications to their platform so that you can take use of the most up-to-date features and have your products stand out.
       </p>
       `,
-      imgSrc:SEOImg,
+      imgSrc: SEOImg,
       color: "black",
       backgroundColor: "white",
     },
@@ -221,9 +221,9 @@ function App() {
       <LandingPage />
       <AboutUs />
       <ServicesPage />
-      <ServiceSlider data={sliderOneData} />
-      <ServiceSlider data={sliderTwoData} />
-      <ServiceSlider data={sliderThreeData} />
+      <ServiceSlider data={sliderOneData} footerText="LET'S CONNECT TO CORRECT YOUR DIGITAL GROWTH" />
+      <ServiceSlider data={sliderTwoData} footerText="ACTIVATE YOUR AUDIENCES AND UNLEASH THE POWER OF YOUR BRAND" />
+      <ServiceSlider data={sliderThreeData} footerText="WE HELP YOUR BUSINESS TO OPTIMIZE EXPAND AND TRANSFORM" />
       <OurTeam />
       <ContactUs />
       <OurClient />

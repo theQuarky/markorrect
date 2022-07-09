@@ -35,7 +35,7 @@ export default function OurTeam() {
           for folks who want to assist others stay relevant in an ever-changing
           digital environment.
         </p>
-        <p className="our-team-subtitle-two">Meet Markorrect Team</p>
+        <p className="our-team-subtitle-two">Meet Markorrect Founder</p>
         <div className="founder-image-container">
           <div>
             <img
@@ -57,7 +57,7 @@ export default function OurTeam() {
       </div>
       <div className="page-two">
         <div className="heading-of-page-two">GET TO KNOW THE MARKORRECT</div>
-        <p>Meet Markorrect Team</p>
+        <p className="our-team-subtitle-two">Meet Markorrect Team</p>
         <div className="founder-image-container">
           <Carousel
             responsive={responsive}

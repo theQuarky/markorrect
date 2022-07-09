@@ -28,16 +28,26 @@ $background-for-btn: #737375;
 
     .testimonial-giver-name {
       color: $background;
+      height: max-content !important;
+      font-size: 2vw;
     }
 
-    .testimonial-content {}
+    .testimonial-content {
+      font-size: 2vw;
+      width: 150%;
+      text-transform: capitalize;
+      margin-left: -12vw;
+    }
+
+    .react-multiple-carousel__arrow {
+      margin-top: 20vw;
+    }
 
     div {
-      width: 30px;
-      height: 30px;
-      background-color: $orange;
-      border: 1px solid $orange;
-      margin-left: 50%;
+      width: 100px;
+      height: 100px;
+      margin-left: 45%;
+      margin-top: 50px;
     }
   }
 
@@ -57,7 +67,28 @@ $background-for-btn: #737375;
 }
 
 @media screen and (max-width: 925px) {
+  .testimonial-slider-page {
+    .testimonial-content {
+      font-size: 3vw;
+      width: 150%;
+      text-transform: capitalize;
+      margin-left: -12vw;
+    }
+
+    .react-multiple-carousel__arrow {
+      margin-top: 20vw;
+    }
+
+    div {
+      width: 100px;
+      height: 100px;
+      margin-left: 40% !important;
+      margin-top: 50px;
+    }
+  }
+
   .testimonial-footer {
+    height: 8vw !important;
     font-size: 4vw !important;
     padding-bottom: 4vw !important
   }

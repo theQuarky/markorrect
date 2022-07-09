@@ -2,7 +2,6 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import Service from "../../Components/Service";
 
-
 import "./index.scss";
 export default function ServiceSlider(props) {
   const responsive = {
@@ -27,7 +26,11 @@ export default function ServiceSlider(props) {
   const data = props.data;
   return (
     <div className="service-slider">
-      <Carousel shouldResetAutoplay={false} infinite={true} responsive={responsive}>
+      <Carousel
+        shouldResetAutoplay={false}
+        infinite={true}
+        responsive={responsive}
+      >
         {data.map((c, index) => {
           return (
             <Service
@@ -40,7 +43,7 @@ export default function ServiceSlider(props) {
           );
         })}
       </Carousel>
-      <div className="footer">Let's Connect to Correct Your Digital Growth</div>
+      <div className="footer">{props.footerText}</div>
     </div>
   );
 }
