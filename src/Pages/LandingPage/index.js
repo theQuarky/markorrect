@@ -43,7 +43,7 @@ export default function LandingPage(props) {
           in this<span> digital era</span>.
         </div>
         <div className="ctc-btn-middle">
-          <button>
+          <button onClick={props.toContactUs}>
             {" "}
             <span>Work</span> With Mark<span>orrect</span>
           </button>
