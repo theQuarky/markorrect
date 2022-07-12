@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.scss";
 import AboutUs from "./Pages/AboutUs";
 import ContactUs from "./Pages/ContactUs";
@@ -18,8 +19,10 @@ import PPCImg from "./assets/services/Markorrect  ppc.svg";
 import VideoMarketingImg from "./assets/services/Markorrect  video marketing.svg";
 import WebDevImg from "./assets/services/Markorrect  web development.svg";
 import OurClient from "./Pages/OurClient";
+import { useRef } from "react";
 
 function App() {
+  let formRef = useRef();
   const sliderOneData = [
     {
       title: `<span>Search</span> Engine Optimization`,
@@ -216,19 +219,42 @@ function App() {
       backgroundColor: "rgb(38, 40, 44)",
     },
   ];
+
+  const toContactUs = () => {
+    if (formRef.current) formRef.current.scrollIntoView({ behavior: "smooth" });
+    else {
+      formRef = React.createRef(document.getElementById("form"));
+      formRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <div className="App">
-      <LandingPage />
-      <AboutUs />
-      <ServicesPage />
-      <ServiceSlider data={sliderOneData} footerText="LET'S CONNECT TO CORRECT YOUR DIGITAL GROWTH" />
-      <ServiceSlider data={sliderTwoData} footerText="ACTIVATE YOUR AUDIENCES AND UNLEASH THE POWER OF YOUR BRAND" />
-      <ServiceSlider data={sliderThreeData} footerText="WE HELP YOUR BUSINESS TO OPTIMIZE EXPAND AND TRANSFORM" />
-      <OurTeam />
-      <ContactUs />
-      <OurClient />
-      <Testimonials />
-      <FooterPage />
+      <LandingPage toContactUs={toContactUs} />
+      <AboutUs toContactUs={toContactUs} />
+      <ServicesPage toContactUs={toContactUs} />
+      <ServiceSlider
+        toContactUs={toContactUs}
+        data={sliderOneData}
+        footerText="LET'S CONNECT TO CORRECT YOUR DIGITAL GROWTH"
+      />
+      <ServiceSlider
+        toContactUs={toContactUs}
+        data={sliderTwoData}
+        footerText="ACTIVATE YOUR AUDIENCES AND UNLEASH THE POWER OF YOUR BRAND"
+      />
+      <ServiceSlider
+        toContactUs={toContactUs}
+        data={sliderThreeData}
+        footerText="WE HELP YOUR BUSINESS TO OPTIMIZE EXPAND AND TRANSFORM"
+      />
+      <OurTeam toContactUs={toContactUs} />
+      <div id="form" ref={formRef}>
+        <ContactUs />
+      </div>
+      <OurClient toContactUs={toContactUs} />
+      <Testimonials toContactUs={toContactUs} />
+      <FooterPage toContactUs={toContactUs} />
     </div>
   );
 }

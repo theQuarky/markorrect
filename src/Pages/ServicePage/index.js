@@ -4,7 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 
 import "./index.scss";
 
-export default function ServicesPage() {
+export default function ServicesPage(props) {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -236,7 +236,9 @@ export default function ServicesPage() {
           ))}
         </Carousel>
       </div>
-      <div className="service-page-footer">Unleash Your Growth</div>
+      <div onClick={props.toContactUs} className="service-page-footer">
+        Unleash Your Growth
+      </div>
     </div>
   );
 }

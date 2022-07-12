@@ -39,11 +39,15 @@ export default function ServiceSlider(props) {
               color={c.color}
               content={c.content}
               title={c.title}
+              key={index}
+              toContactUs={props.toContactUs}
             />
           );
         })}
       </Carousel>
-      <div className="footer">{props.footerText}</div>
+      <div onClick={props.toContactUs} className="footer">
+        {props.footerText}
+      </div>
     </div>
   );
 }

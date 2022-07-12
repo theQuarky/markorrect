@@ -9,7 +9,9 @@ export default function LandingPage(props) {
           <img src={logo} alt="LOGO" />
         </span>
         <ul>
-          <li className="ctc-btn">Let's Connect</li>
+          <li className="ctc-btn" onClick={props.toContactUs}>
+            Let's Connect
+          </li>
           <li>Our Team</li>
           <li>Contact</li>
           <li>About</li>

@@ -4,7 +4,7 @@ import React from "react";
 
 import "./index.scss";
 
-export default function OurTeam() {
+export default function OurTeam(props) {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -31,9 +31,9 @@ export default function OurTeam() {
         <h1>Our team</h1>
         <p className="our-team-subtitle-one">
           We are digital marketers and web developers who are influenced by the
-          rising and booming digital economy.<br/> Our team is always on the lookout
-          for folks who want to assist others stay relevant in an ever-changing
-          digital environment.
+          rising and booming digital economy.
+          <br /> Our team is always on the lookout for folks who want to assist
+          others stay relevant in an ever-changing digital environment.
         </p>
         <p className="our-team-subtitle-two">Meet Markorrect Founder</p>
         <div className="founder-image-container">
@@ -81,7 +81,7 @@ export default function OurTeam() {
         </div>
       </div>
 
-      <div className="our-team-page-footer">
+      <div onClick={props.toContactUs} className="our-team-page-footer">
         <div className="footer-left">
           For Your Digital Marketing demands, <br /> Hire the best Digital
           Marketing Agency.
